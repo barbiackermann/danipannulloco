@@ -432,41 +432,7 @@ body{
   
 
 
-@media (max-width:648px) {
-    .navbar-brand{
-        margin: 0;
-    }
-    .titleNav{
-        height: 5vh;
-        object-fit: cover;
-        object-position: center center;
-    }
-    .navbar-toggler{
-        border: 1px solid transparent !important;
-    }
-    .nav-link{
-        text-decoration: none !important;
-        /* color: rgb(255, 255, 255, 1) !important; */
-        color: rgb(0, 0, 0, 1) !important;
-        text-align: right;
-        padding: 0 1vw;
-    }
-    .dprrss{
-        display: flex;
-        list-style: none;
-        justify-content: flex-end;
-        margin: 0;
-        padding: 0;
-    }
-    .dprrss>li>.nav-link{
-        padding: 0 0.75vw;
-    }
-    .nav-link>i{
-        color: rgb(255, 255, 255, 1);
-        font-size: 2.5vh;
-        margin-right: 3vh;
-    }
-}
+
 
 /* Main */
 .entrytitle{
@@ -488,7 +454,6 @@ body{
   color: rgb(44, 182, 163);
   font-weight: 900;
 }
-
 .btn-links{
   color: rgb(44, 182, 163);
   background-color: transparent;
@@ -523,4 +488,57 @@ body{
 }
 .sin-lineas{
   font-size: 1em;
+}
+
+
+
+/* MOBILE */
+@media (max-width:648px) {
+  .dpnav{
+    margin: 1em auto auto auto;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+    .navbar-brand{
+        margin: 0;
+    }
+    .titleNav{
+        height: 5vh;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .navbar-toggler{
+        border: 1px solid black;
+    }
+    .nav-link{
+        text-decoration: none !important;
+        /* color: rgb(255, 255, 255, 1) !important; */
+        color: rgb(0, 0, 0, 1) !important;
+        text-align: right;
+        padding: 0 1vw;
+    }
+    .dprrss{
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+    }
+    .dprrss>li>.nav-link{
+        padding: 0 0.75vw;
+    }
+    .nav-link>i{
+        color: rgb(255, 255, 255, 1);
+        font-size: 2.5vh;
+        margin-right: 3vh;
+    }
+    .efecto-glitch {
+      width: 80%;
+    }
+    .efecto-glitch img {
+      padding: 0;
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
 }
