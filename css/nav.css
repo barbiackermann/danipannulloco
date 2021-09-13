@@ -1,0 +1,526 @@
+body{
+    font-family: Impact;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Besley', serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: Helvetica, sans-serif;
+    background-color: white;
+}
+.dpnav{
+    /* background-image: url(../assets/img/drive-download-20210826T110652Z-001/IMG_2689.jpg); */
+    /* background-color: #07433b; */
+    background-color: transparent;
+    margin: 1em auto 3em auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    /* box-shadow: rgba(7, 67, 59, 0.1) 0px 5px 15px; */
+    
+    /* border-bottom: 1px solid rgb(7, 67, 59); */
+}
+
+/* .titleNav{
+    height: 10vh;
+    object-fit: cover;
+    object-position: center center;
+} */
+.navbar-brand{
+    /* color: black !important; */
+    font-family: Impact;
+    font-size: 3vw;
+    color: rgb(0, 255, 221) !important;
+
+}
+.dpmenu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.nav-link{
+    text-decoration: none !important;
+    /* color: rgb(255, 255, 255, 1) !important; */
+    color: rgb(0, 0, 0, 1) !important;
+    text-align: right;
+    padding: 0 1vw;
+}
+.dprrss{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+.dprrss>li>.nav-link{
+    padding: 0 0.75vw;
+}
+.nav-link>i{
+    /* color: rgb(255, 255, 255, 1) !important; */
+    color: rgb(0, 0, 0, 1) !important;
+    font-size: 1vw;
+}
+.nav-link:hover, .nav-link>i:hover{
+    /* color: rgb(255, 255, 255, 1) !important; */
+    color: rgb(0, 0, 0, 1) !important;
+    text-shadow: rgb(44, 182, 163) 5px 5px;
+}
+
+.active, .active>i{
+    color: rgb(44, 182, 163) !important;
+}
+.links{
+  	  color: rgb(44, 182, 163) !important;
+}
+
+/* GLITCH */
+.efecto-glitch {
+    /*propiedades para hacer el efecto "responsivo"*/
+    width: 100%;
+    max-width: 500px;
+    min-width: 50%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    /*Propiedades background css3 para que el fondo sea "responsivo"*/
+    background: url(../assets/navTitle/1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*Propiedad Animacion CSS*/
+    -webkit-animation:
+      /*Dos grupos de animaciones*/
+      glitch 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite,
+      glitchMotion 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite;
+    animation:
+      /*Dos grupos de animaciones*/
+      glitch 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite,
+      glitchMotion 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite;
+  }
+  .efecto-glitch img {
+    /*la imagen oculta es la que otorga una altura proporcional al div*/
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    opacity: 0;
+    padding: 2em;
+  }
+  @-webkit-keyframes glitch {
+    
+    /*Nosotros especificamos el intervalo de tiempo en el que queremos que las imagenes de fondo cambien.*/
+    
+    0% {
+      background: url(../assets/navTitle/1.png) no-repeat;
+      background-size: contain;
+    }
+    1.5% {
+      background: url(../assets/navTitle/7.png) no-repeat;
+      background-size: contain;
+    }
+    1.6% {
+      background: url(../assets/navTitle/4.png) no-repeat;
+      background-size: contain; 
+    }
+    1.7%{
+      background: url(../assets/navTitle/6.png) no-repeat;
+      background-size: contain;
+    }
+    1.8% {
+      background: url(../assets/navTitle/10.png) no-repeat;
+      background-size: contain;
+    }
+    1.9% {
+      background: url(../assets/navTitle/7.png) no-repeat;
+      background-size: contain;
+    }
+    2%{
+      background: url(../assets/navTitle/4.png) no-repeat;
+      background-size: contain;
+    }
+    2.3%{
+      background: url(../assets/navTitle/6.png) no-repeat;
+      background-size: contain;
+    }
+    2.5%{
+      background: url(../assets/navTitle/7.png) no-repeat;
+      background-size: contain;
+    }
+    3%{
+      background: url(../assets/navTitle/10.png) no-repeat;
+      background-size: contain;
+    }
+    5%{
+      background: url(../assets/navTitle/5.png) no-repeat;
+      background-size: contain;
+    }
+  
+  
+    7.6% {
+      background: url(../assets/navTitle/1.png) no-repeat;
+      background-size: contain; 
+    }
+    7.7%{
+      background: url(../assets/navTitle/7.png) no-repeat;
+      background-size: contain;
+    }
+    7.8% {
+      background: url(../assets/navTitle/10.png) no-repeat;
+      background-size: contain;
+    }
+    7.9% {
+      background: url(../assets/navTitle/4.png) no-repeat;
+      background-size: contain;
+    }
+    8%{
+      background: url(../assets/navTitle/7.png) no-repeat;
+      background-size: contain;
+    }
+    8.3%{
+      background: url(../assets/navTitle/5.png) no-repeat;
+      background-size: contain;
+    }
+    8.5%{
+      background: url(../assets/navTitle/1.png) no-repeat;
+      background-size: contain;
+    }
+  
+  
+  
+    14.9% {
+      background: url(../assets/navTitle/1.png) no-repeat;
+      background-size: contain;
+    }
+    15.5%{
+      background: url(../assets/navTitle/7.png) no-repeat;
+      background-size: contain;
+    }
+    15.7% {
+      background: url(../assets/navTitle/1.png) no-repeat;
+      background-size: contain;
+    }
+  
+  
+  
+    40.9% {
+      background: url(../assets/navTitle/1.png) no-repeat;
+      background-size: contain;
+    }
+    41.5%{
+      background: url(../assets/navTitle/4.png) no-repeat;
+      background-size: contain;
+    }
+    42% {
+      background: url(../assets/navTitle/1.png) no-repeat;
+      background-size: contain;
+    }
+  
+    70.9% {
+      background: url(../assets/navTitle/1.png) no-repeat;
+      background-size: contain;
+    }
+    71.5%{
+      background: url(../assets/navTitle/6.png) no-repeat;
+      background-size: contain;
+    }
+    71.8%{
+      background: url(../assets/navTitle/7.png) no-repeat;
+      background-size: contain;
+    }
+    72% {
+      background: url(../assets/navTitle/1.png) no-repeat;
+      background-size: contain;
+    }
+  
+  
+  }
+  @keyframes glitch {
+    
+    /*Nosotros especificamos el intervalo de tiempo en el que queremos que las imagenes de fondo cambien.*/
+    
+    0% {
+      background: url(../assets/navTitle/1.png) no-repeat;
+      background-size: contain;
+    }
+    1.5% {
+      background: url(../assets/navTitle/7.png) no-repeat;
+      background-size: contain;
+    }
+    1.6% {
+      background: url(../assets/navTitle/4.png) no-repeat;
+      background-size: contain; 
+    }
+    1.7%{
+      background: url(../assets/navTitle/6.png) no-repeat;
+      background-size: contain;
+    }
+    1.8% {
+      background: url(../assets/navTitle/10.png) no-repeat;
+      background-size: contain;
+    }
+    1.9% {
+      background: url(../assets/navTitle/7.png) no-repeat;
+      background-size: contain;
+    }
+    2%{
+      background: url(../assets/navTitle/4.png) no-repeat;
+      background-size: contain;
+    }
+    2.3%{
+      background: url(../assets/navTitle/6.png) no-repeat;
+      background-size: contain;
+    }
+    2.5%{
+      background: url(../assets/navTitle/7.png) no-repeat;
+      background-size: contain;
+    }
+    3%{
+      background: url(../assets/navTitle/10.png) no-repeat;
+      background-size: contain;
+    }
+    5%{
+      background: url(../assets/navTitle/5.png) no-repeat;
+      background-size: contain;
+    }
+  
+  
+    7.6% {
+      background: url(../assets/navTitle/1.png) no-repeat;
+      background-size: contain; 
+    }
+    7.7%{
+      background: url(../assets/navTitle/7.png) no-repeat;
+      background-size: contain;
+    }
+    7.8% {
+      background: url(../assets/navTitle/10.png) no-repeat;
+      background-size: contain;
+    }
+    7.9% {
+      background: url(../assets/navTitle/4.png) no-repeat;
+      background-size: contain;
+    }
+    8%{
+      background: url(../assets/navTitle/7.png) no-repeat;
+      background-size: contain;
+    }
+    8.3%{
+      background: url(../assets/navTitle/5.png) no-repeat;
+      background-size: contain;
+    }
+    8.5%{
+      background: url(../assets/navTitle/1.png) no-repeat;
+      background-size: contain;
+    }
+  
+  
+  
+    14.9% {
+      background: url(../assets/navTitle/1.png) no-repeat;
+      background-size: contain;
+    }
+    15.5%{
+      background: url(../assets/navTitle/7.png) no-repeat;
+      background-size: contain;
+    }
+    15.7% {
+      background: url(../assets/navTitle/1.png) no-repeat;
+      background-size: contain;
+    }
+  
+  
+  
+    40.9% {
+      background: url(../assets/navTitle/1.png) no-repeat;
+      background-size: contain;
+    }
+    41.5%{
+      background: url(../assets/navTitle/4.png) no-repeat;
+      background-size: contain;
+    }
+    42% {
+      background: url(../assets/navTitle/1.png) no-repeat;
+      background-size: contain;
+    }
+  
+    70.9% {
+      background: url(../assets/navTitle/1.png) no-repeat;
+      background-size: contain;
+    }
+    71.5%{
+      background: url(../assets/navTitle/6.png) no-repeat;
+      background-size: contain;
+    }
+    71.8%{
+      background: url(../assets/navTitle/7.png) no-repeat;
+      background-size: contain;
+    }
+    72% {
+      background: url(../assets/navTitle/1.png) no-repeat;
+      background-size: contain;
+    }
+  
+  
+  }
+  @-webkit-keyframes glitchMotion {
+  
+    /*Una segunda animacion para crear el efecto de movimiento, tambien puede ir dentro de la primera animacion pero preferi hacerlas por separado*/
+  
+    7% {
+      transform: translateX(0);
+    }
+    7.5% {
+      transform: translateX(0) translateY(5px);
+    }
+    7.9% {
+      transform: translateX(0) translateY(0);
+    }
+  
+    40% {
+      transform: translateX(0);
+    }
+    40.5% {
+      transform: translateX(-12px) translateY(0);
+    }
+    40.9% {
+      transform: translateX(0) translateY(0);
+    }
+  
+    70% {
+      transform: translateX(0);
+    }
+    70.5% {
+      transform: translateX(5px) translateY(0);
+    }
+    70.9% {
+      transform: translateX(0) translateY(0);
+    }
+  
+  }
+  @keyframes glitchMotion {
+  
+    /*Una segunda animacion para crear el efecto de movimiento, tambien puede ir dentro de la primera animacion pero preferi hacerlas por separado*/
+  
+    7% {
+      transform: translateX(0);
+    }
+    7.5% {
+      transform: translateX(0) translateY(5px);
+    }
+    7.9% {
+      transform: translateX(0) translateY(0);
+    }
+  
+    40% {
+      transform: translateX(0);
+    }
+    40.5% {
+      transform: translateX(-12px) translateY(0);
+    }
+    40.9% {
+      transform: translateX(0) translateY(0);
+    }
+  
+    70% {
+      transform: translateX(0);
+    }
+    70.5% {
+      transform: translateX(5px) translateY(0);
+    }
+    70.9% {
+      transform: translateX(0) translateY(0);
+    }
+  
+  }
+  
+  
+
+
+@media (max-width:648px) {
+    .navbar-brand{
+        margin: 0;
+    }
+    .titleNav{
+        height: 5vh;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .navbar-toggler{
+        border: 1px solid transparent !important;
+    }
+    .nav-link{
+        text-decoration: none !important;
+        /* color: rgb(255, 255, 255, 1) !important; */
+        color: rgb(0, 0, 0, 1) !important;
+        text-align: right;
+        padding: 0 1vw;
+    }
+    .dprrss{
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+    }
+    .dprrss>li>.nav-link{
+        padding: 0 0.75vw;
+    }
+    .nav-link>i{
+        color: rgb(255, 255, 255, 1);
+        font-size: 2.5vh;
+        margin-right: 3vh;
+    }
+}
+
+/* Main */
+.entrytitle{
+  display: inline-block;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+  font-family: 'Courier New', Courier, monospace;
+}
+.main-text{
+  font-weight: 400;
+  font-size: 1.25em;
+}
+.imgbio{
+  /* box-shadow: rgba(7, 67, 59, 0.35) 0px 5px 15px; */
+  margin-bottom: 2em;
+}
+.destacado{
+  color: rgb(44, 182, 163);
+  font-weight: 900;
+}
+
+.btn-links{
+  color: rgb(44, 182, 163);
+  background-color: transparent;
+  border: 1px solid rgb(44, 182, 163);
+  margin: 3em auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  text-decoration: underline;
+  width: 50%;
+}
+.btn-links:hover{
+  color: rgb(35, 141, 127);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+/* TABLES */
+.table{
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 500;
+  font-size: small;
+  width: 100%;
+  margin: auto;
+}
+.table td {
+  padding: 0.25rem;
+  border-top: 0.5px solid #dee2e6;
+}
+.sin-lineas{
+  font-size: 1em;
+}

@@ -1,0 +1,447 @@
+body{
+    font-family: Impact;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Besley', serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url('../assets/img/drive-download-20210826T110652Z-001/IMG_2689.jpg');
+}
+.dpmain{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+/* .dptitle{
+    font-size: 13vw;
+    font-weight: 900;
+    line-height: 12vw;
+    font-family: 'impact-regular', sans-serif;
+    text-align: left;
+    color: white;
+    padding: 0 0 0 3vw;
+} */
+/* .dptitleimg{
+    width: 100%;
+    display: block;
+    margin: 0 0 0 2vw;
+} */
+.dpmenu{
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 3vw 0 0;
+}
+.nav-bar{
+    list-style: none;
+    justify-content: right;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    font-weight: 300;
+}
+.nav-link{
+    text-decoration: none !important;
+    color: white;
+    text-align: right;
+    font-weight: 600;
+    font-size: x-large;
+}
+.dprrss{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+.nav-link>i{
+    color: white;
+    font-size: 2vw;
+}
+.nav-link:hover, .nav-link>i:hover{
+    color: white;
+    text-shadow: rgb(44, 182, 163) 5px 5px;
+}
+/* GLITCH */
+.efecto-glitch {
+    /*propiedades para hacer el efecto "responsivo"*/
+    width: 100%;
+    max-width: 100%;
+    min-width: 50%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    /*Propiedades background css3 para que el fondo sea "responsivo"*/
+    background: url(../assets/h1Title/1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*Propiedad Animacion CSS*/
+    -webkit-animation:
+      /*Dos grupos de animaciones*/
+      glitch 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite,
+      glitchMotion 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite;
+    animation:
+      /*Dos grupos de animaciones*/
+      glitch 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite,
+      glitchMotion 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite;
+  }
+  .efecto-glitch img {
+    /*la imagen oculta es la que otorga una altura proporcional al div*/
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    opacity: 0;
+  }
+  @-webkit-keyframes glitch {
+    
+    /*Nosotros especificamos el intervalo de tiempo en el que queremos que las imagenes de fondo cambien.*/
+    
+    0% {
+      background: url(../assets/h1Title/1.png) no-repeat;
+      background-size: contain;
+    }
+    1.5% {
+      background: url(../assets/h1Title/7.png) no-repeat;
+      background-size: contain;
+    }
+    1.6% {
+      background: url(../assets/h1Title/4.png) no-repeat;
+      background-size: contain; 
+    }
+    1.7%{
+      background: url(../assets/h1Title/6.png) no-repeat;
+      background-size: contain;
+    }
+    1.8% {
+      background: url(../assets/h1Title/10.png) no-repeat;
+      background-size: contain;
+    }
+    1.9% {
+      background: url(../assets/h1Title/7.png) no-repeat;
+      background-size: contain;
+    }
+    2%{
+      background: url(../assets/h1Title/4.png) no-repeat;
+      background-size: contain;
+    }
+    2.3%{
+      background: url(../assets/h1Title/6.png) no-repeat;
+      background-size: contain;
+    }
+    2.5%{
+      background: url(../assets/h1Title/7.png) no-repeat;
+      background-size: contain;
+    }
+    3%{
+      background: url(../assets/h1Title/10.png) no-repeat;
+      background-size: contain;
+    }
+    5%{
+      background: url(../assets/h1Title/5.png) no-repeat;
+      background-size: contain;
+    }
+  
+  
+    7.6% {
+      background: url(../assets/h1Title/1.png) no-repeat;
+      background-size: contain; 
+    }
+    7.7%{
+      background: url(../assets/h1Title/7.png) no-repeat;
+      background-size: contain;
+    }
+    7.8% {
+      background: url(../assets/h1Title/10.png) no-repeat;
+      background-size: contain;
+    }
+    7.9% {
+      background: url(../assets/h1Title/4.png) no-repeat;
+      background-size: contain;
+    }
+    8%{
+      background: url(../assets/h1Title/7.png) no-repeat;
+      background-size: contain;
+    }
+    8.3%{
+      background: url(../assets/h1Title/5.png) no-repeat;
+      background-size: contain;
+    }
+    8.5%{
+      background: url(../assets/h1Title/1.png) no-repeat;
+      background-size: contain;
+    }
+  
+  
+  
+    14.9% {
+      background: url(../assets/h1Title/1.png) no-repeat;
+      background-size: contain;
+    }
+    15.5%{
+      background: url(../assets/h1Title/7.png) no-repeat;
+      background-size: contain;
+    }
+    15.7% {
+      background: url(../assets/h1Title/1.png) no-repeat;
+      background-size: contain;
+    }
+  
+  
+  
+    40.9% {
+      background: url(../assets/h1Title/1.png) no-repeat;
+      background-size: contain;
+    }
+    41.5%{
+      background: url(../assets/h1Title/4.png) no-repeat;
+      background-size: contain;
+    }
+    42% {
+      background: url(../assets/h1Title/1.png) no-repeat;
+      background-size: contain;
+    }
+  
+    70.9% {
+      background: url(../assets/h1Title/1.png) no-repeat;
+      background-size: contain;
+    }
+    71.5%{
+      background: url(../assets/h1Title/6.png) no-repeat;
+      background-size: contain;
+    }
+    71.8%{
+      background: url(../assets/h1Title/7.png) no-repeat;
+      background-size: contain;
+    }
+    72% {
+      background: url(../assets/h1Title/1.png) no-repeat;
+      background-size: contain;
+    }
+  
+  
+  }
+  @keyframes glitch {
+    
+    /*Nosotros especificamos el intervalo de tiempo en el que queremos que las imagenes de fondo cambien.*/
+    
+    0% {
+      background: url(../assets/h1Title/1.png) no-repeat;
+      background-size: contain;
+    }
+    1.5% {
+      background: url(../assets/h1Title/7.png) no-repeat;
+      background-size: contain;
+    }
+    1.6% {
+      background: url(../assets/h1Title/4.png) no-repeat;
+      background-size: contain; 
+    }
+    1.7%{
+      background: url(../assets/h1Title/6.png) no-repeat;
+      background-size: contain;
+    }
+    1.8% {
+      background: url(../assets/h1Title/10.png) no-repeat;
+      background-size: contain;
+    }
+    1.9% {
+      background: url(../assets/h1Title/7.png) no-repeat;
+      background-size: contain;
+    }
+    2%{
+      background: url(../assets/h1Title/4.png) no-repeat;
+      background-size: contain;
+    }
+    2.3%{
+      background: url(../assets/h1Title/6.png) no-repeat;
+      background-size: contain;
+    }
+    2.5%{
+      background: url(../assets/h1Title/7.png) no-repeat;
+      background-size: contain;
+    }
+    3%{
+      background: url(../assets/h1Title/10.png) no-repeat;
+      background-size: contain;
+    }
+    5%{
+      background: url(../assets/h1Title/5.png) no-repeat;
+      background-size: contain;
+    }
+  
+  
+    7.6% {
+      background: url(../assets/h1Title/1.png) no-repeat;
+      background-size: contain; 
+    }
+    7.7%{
+      background: url(../assets/h1Title/7.png) no-repeat;
+      background-size: contain;
+    }
+    7.8% {
+      background: url(../assets/h1Title/10.png) no-repeat;
+      background-size: contain;
+    }
+    7.9% {
+      background: url(../assets/h1Title/4.png) no-repeat;
+      background-size: contain;
+    }
+    8%{
+      background: url(../assets/h1Title/7.png) no-repeat;
+      background-size: contain;
+    }
+    8.3%{
+      background: url(../assets/h1Title/5.png) no-repeat;
+      background-size: contain;
+    }
+    8.5%{
+      background: url(../assets/h1Title/1.png) no-repeat;
+      background-size: contain;
+    }
+  
+  
+  
+    14.9% {
+      background: url(../assets/h1Title/1.png) no-repeat;
+      background-size: contain;
+    }
+    15.5%{
+      background: url(../assets/h1Title/7.png) no-repeat;
+      background-size: contain;
+    }
+    15.7% {
+      background: url(../assets/h1Title/1.png) no-repeat;
+      background-size: contain;
+    }
+  
+  
+  
+    40.9% {
+      background: url(../assets/h1Title/1.png) no-repeat;
+      background-size: contain;
+    }
+    41.5%{
+      background: url(../assets/h1Title/4.png) no-repeat;
+      background-size: contain;
+    }
+    42% {
+      background: url(../assets/h1Title/1.png) no-repeat;
+      background-size: contain;
+    }
+  
+    70.9% {
+      background: url(../assets/h1Title/1.png) no-repeat;
+      background-size: contain;
+    }
+    71.5%{
+      background: url(../assets/h1Title/6.png) no-repeat;
+      background-size: contain;
+    }
+    71.8%{
+      background: url(../assets/h1Title/7.png) no-repeat;
+      background-size: contain;
+    }
+    72% {
+      background: url(../assets/h1Title/1.png) no-repeat;
+      background-size: contain;
+    }
+  
+  
+  }
+  @-webkit-keyframes glitchMotion {
+  
+    /*Una segunda animacion para crear el efecto de movimiento, tambien puede ir dentro de la primera animacion pero preferi hacerlas por separado*/
+  
+    7% {
+      transform: translateX(0);
+    }
+    7.5% {
+      transform: translateX(0) translateY(5px);
+    }
+    7.9% {
+      transform: translateX(0) translateY(0);
+    }
+  
+    40% {
+      transform: translateX(0);
+    }
+    40.5% {
+      transform: translateX(-12px) translateY(0);
+    }
+    40.9% {
+      transform: translateX(0) translateY(0);
+    }
+  
+    70% {
+      transform: translateX(0);
+    }
+    70.5% {
+      transform: translateX(5px) translateY(0);
+    }
+    70.9% {
+      transform: translateX(0) translateY(0);
+    }
+  
+  }
+  @keyframes glitchMotion {
+  
+    /*Una segunda animacion para crear el efecto de movimiento, tambien puede ir dentro de la primera animacion pero preferi hacerlas por separado*/
+  
+    7% {
+      transform: translateX(0);
+    }
+    7.5% {
+      transform: translateX(0) translateY(5px);
+    }
+    7.9% {
+      transform: translateX(0) translateY(0);
+    }
+  
+    40% {
+      transform: translateX(0);
+    }
+    40.5% {
+      transform: translateX(-12px) translateY(0);
+    }
+    40.9% {
+      transform: translateX(0) translateY(0);
+    }
+  
+    70% {
+      transform: translateX(0);
+    }
+    70.5% {
+      transform: translateX(5px) translateY(0);
+    }
+    70.9% {
+      transform: translateX(0) translateY(0);
+    }
+  
+  }
+
+@media (max-width:648px) {
+    .dptitle{
+        font-size: 7vh;
+        font-weight: 900;
+        line-height: 10vh;
+        font-family: Impact;
+        text-align: left;
+        color: white;
+        padding: 5vh 0 3vh 0;
+        margin: 0;
+    }
+    .dpmenu{
+        display: flex;
+        height: 25vh;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+    }
+    .nav-link>i{
+        margin-top: 2vh;
+        font-size: 3.5vh;
+    }
+}
