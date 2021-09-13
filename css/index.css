@@ -5,7 +5,7 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
     font-family: Helvetica, sans-serif;
     font-family: 'Courier New', Courier, monospace;
-    background-image: url('../assets/img/drive-download-20210826T110652Z-001/IMG_2689.jpg');
+    background-image: url('../assets/img/IMG_2689.jpg');
 }
 .dpmain{
     height: 100vh;
@@ -423,7 +423,12 @@ body{
   }
 
 @media (max-width:648px) {
-    .dptitle{
+  .dpmain{
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+/*     .dptitle{
         font-size: 7vh;
         font-weight: 900;
         line-height: 10vh;
@@ -432,7 +437,7 @@ body{
         color: white;
         padding: 5vh 0 3vh 0;
         margin: 0;
-    }
+    } */
     .dpmenu{
         display: flex;
         height: 25vh;
