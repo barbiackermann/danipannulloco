@@ -16,6 +16,9 @@ a, a:link, a:visited, a:active, a:hover {
   text-decoration:none;
   color:#FFFFFF;
 }
+.backcolor{
+  color: black;
+}
 .backcolor:hover{
   background-color: black;
   color: white;
@@ -30,7 +33,6 @@ a, a:link, a:visited, a:active, a:hover {
 .navbar-brand{
     font-family: Impact;
     font-size: 3vw;
-    color: rgb(0, 255, 221) !important;
 }
 .dpmenu{
     display: flex;
@@ -40,7 +42,7 @@ a, a:link, a:visited, a:active, a:hover {
 .nav-link{
     text-decoration: none !important;
     /* color: rgb(255, 255, 255, 1) !important; */
-    color: rgb(0, 0, 0, 1) !important;
+    /* color: rgb(0, 0, 0, 1) !important; */
     text-align: right;
     padding: 0 1vw;
 }
@@ -58,11 +60,59 @@ a, a:link, a:visited, a:active, a:hover {
     color: rgb(0, 0, 0, 1) !important;
     font-size: 1vw;
 }
+.contact{
+  color: black !important;
+}
 .active, .active>i{
     color: white !important;
     background-color: black;
     font-family:'Courier New', Courier, monospace;
     font-weight: 600;
+}
+#expulsion{
+  background-color: transparent;
+  height: 0px;
+  border-color: transparent;
+}
+.dropdown-item {
+  display: block;
+  width: auto;
+  padding: 0.25rem 0 0.25rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: white !important;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  color: rgb(37, 37, 37) !important;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff !important;
+  text-decoration: none;
+  background-color: rgb(37, 37, 37);
+}
+.dropdown-menu{
+  border: none;
+  border-radius: 0;
+  background-color: rgb(105, 105, 105);
+  width: 50% !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.dropdown-item-text {
+  display: block;
+  padding: 0.25rem 1rem;
+  color: #212529;
+}
+.shows{
+  color: white !important;
 }
 
 /* GLITCH */
@@ -469,6 +519,15 @@ a, a:link, a:visited, a:active, a:hover {
 .sin-lineas{
   font-size: 1em;
 }
+tr:last-child{
+  border-bottom: 0.5px solid #dee2e6;
+}
+.ttpress{
+  background-color: black;
+}
+.separador{
+  border-bottom: 1px solid grey !important;
+}
 
 
 
@@ -478,7 +537,7 @@ a, a:link, a:visited, a:active, a:hover {
     margin: 1em auto auto auto;
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0.1);
-}
+    }
     .navbar-brand{
         margin: 0;
     }
@@ -488,7 +547,10 @@ a, a:link, a:visited, a:active, a:hover {
         object-position: center center;
     }
     .navbar-toggler{
-        border: 1px solid black;
+        width: auto;
+        margin-right: 0;
+        margin-left: 1em;
+        padding: 0;
     }
     .nav-link{
         text-decoration: none !important;
@@ -496,6 +558,46 @@ a, a:link, a:visited, a:active, a:hover {
         color: rgb(0, 0, 0, 1) !important;
         text-align: right;
         padding: 0 1vw;
+    }
+    .dropdown-item {
+      display: block;
+      width: auto;
+      padding: 0 0.5rem 0 0;
+      clear: both;
+      font-weight: 400;
+      color: white !important;
+      text-align: right;
+      white-space: nowrap;
+      background-color: transparent;
+      border: 0;
+    }
+    .dropdown-item:hover, .dropdown-item:focus {
+      color: rgb(37, 37, 37) !important;
+      text-decoration: none;
+      background-color: #f8f9fa;
+    }
+    .dropdown-item.active, .dropdown-item:active {
+      color: #fff !important;
+      text-decoration: none;
+      background-color: rgb(37, 37, 37);
+    }
+    .dropdown-menu{
+      border: none;
+      border-radius: 0;
+      background-color: rgb(105, 105, 105);
+      width: 50% !important;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+    }
+    .dropdown-item-text {
+      display: block;
+      padding: 0.25rem 1rem;
+      color: #212529;
+    }
+    .shows{
+      color: white !important;
     }
     .dprrss{
         display: flex;
@@ -514,11 +616,32 @@ a, a:link, a:visited, a:active, a:hover {
     }
     .efecto-glitch {
       width: 80%;
+      margin-right: auto;
     }
     .efecto-glitch img {
       padding: 0;
     }
     .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+      padding: 0;
+    }
+    .main-text{
+      margin-top: 1rem;
+    }
+    .disabled{
+      color: white !important;
+      background-color: black;
+    }
+    .mobil{
+      margin: 0;
+    }
+    .sin-lineas{
+      font-size: 0.8em;
+    }
+    .contact{
+      color: black;
+    }
+    .imgcontact{
+      margin-top: 2em;
     }
 }
