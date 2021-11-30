@@ -114,7 +114,15 @@ a, a:link, a:visited, a:active, a:hover {
 .shows{
   color: white !important;
 }
-
+.imgmodal{
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  height: 20vh;
+}
+.imgmodal>img{
+  object-fit: cover;
+}
 /* GLITCH */
 .efecto-glitch {
     /*propiedades para hacer el efecto "responsivo"*/
