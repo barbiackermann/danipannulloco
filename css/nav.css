@@ -543,6 +543,15 @@ tr:last-child{
 .separador{
   border-bottom: 1px solid grey !important;
 }
+.btn-top{
+  background-color: grey;
+  position: fixed;
+  bottom: 20px;
+  right: 250px;
+}
+.btn-top>a{
+  color: white;
+}
 
 
 
@@ -660,11 +669,20 @@ tr:last-child{
       margin-top: 2em;
     }
     .photo-gallery{
-      margin: auto;
+      margin: 0;
       padding: 0;
     }
     .img-gallery{
-      padding: 0;
-      margin: 1em;
+      padding:  0.5em 0 !important;
+      margin: 0 !important;
     }
-}
+    .btn-top{
+      background-color: grey;
+      position: fixed;
+      bottom: 10px;
+      right: 50px;
+    }
+    .btn-top>a{
+      color: white;
+    }
+  }
