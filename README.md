@@ -1,5 +1,5 @@
-# danipannulloco
-Dance company website
+# Dani Pannullo Co.
+Dance company website.
 
 - Html
 - Css
